@@ -1,7 +1,5 @@
-
-
 {
-  "name": "back",
+  "name": "backA",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,6 +13,7 @@
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "back": "file:",
+    "backA": "file:",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
