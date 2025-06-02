@@ -2,9 +2,9 @@
 {
   "name": "back",
   "version": "1.0.0",
-  "main": "Server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node Server.js",
+    "start": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
