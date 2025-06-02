@@ -5,36 +5,37 @@ const path = require('path');
 const cors = require('cors');
 const multer = require('multer');
 const fs = require('fs').promises;
-const authRoute = require('../Routes/AuthRoutes/AuthRoute');
-const userRoutes = require('../Routes/AdminRoutes/UserRoutes');
-const niveauRoute = require('../Routes/AdminRoutes/NiveauRoute');
-const classeRoute = require('../Routes/AdminRoutes/ClasseRoute');
-const eleveRoute = require('../Routes/AdminRoutes/EleveRoute');
-const unitRoute = require('../Routes/AdminRoutes/UniteRoute');
-const enseignantRoute = require('../Routes/AdminRoutes/EnseignantRoute');
-const lessonRoute = require('../Routes/TeacherRoutes/LessonRoute');
-const quizRoute = require('../Routes/TeacherRoutes/QuizRoute');
-const gameRoute = require('../Routes/TeacherRoutes/GameRoute');
-const TeacherprogramRoute = require('../Routes/TeacherRoutes/TeacherProgramRoute');
-const AdminprogramRoute = require('../Routes/AdminRoutes/AdminProgramRoute');
-const testRoute = require('../Routes/TeacherRoutes/TestRoute');
-const vocabRoute = require('../Routes/TeacherRoutes/VocabRoute');
-const categoryRoute = require('../Routes/TeacherRoutes/CategorieRoute');
-const studentLessonRoutes = require('../Routes/StudentRoutes/StudentLessonRoute');
-const studentVocabRoutes = require('../Routes/StudentRoutes/StudentVocabRoute');
-const studentTestRoutes = require('../Routes/StudentRoutes/StudentTestRoute');
-const studentQuizRoutes = require('../Routes/StudentRoutes/StudentQuizRoute');
-const studentGameRoutes = require('../Routes/StudentRoutes/StudentGameRoute');
-const notificationRoutes = require('../Routes/NotifRoutes/NotifRoute');
-const parentProgressRoute = require('../Routes/ParentRoutes/ParentProgressRoute');
-const messageRoutes = require('../Routes/MessageRoutes/MessageRoutes');
+const authRoute = require('../BackApp/Routes/AuthRoutes/AuthRoute');
+const userRoutes = require('../BackApp/Routes/AdminRoutes/UserRoutes');
+const niveauRoute = require('../BackApp/Routes/AdminRoutes/NiveauRoute');
+const classeRoute = require('../BackApp/Routes/AdminRoutes/ClasseRoute');
+const eleveRoute = require('../BackApp/Routes/AdminRoutes/EleveRoute');
+const unitRoute = require('../BackApp/Routes/AdminRoutes/UniteRoute');
+const enseignantRoute = require('../BackApp/Routes/AdminRoutes/EnseignantRoute');
+const lessonRoute = require('../BackApp/Routes/TeacherRoutes/LessonRoute');
+const quizRoute = require('../BackApp/Routes/TeacherRoutes/QuizRoute');
+const gameRoute = require('../BackApp/Routes/TeacherRoutes/GameRoute');
+const TeacherprogramRoute = require('../BackApp/Routes/TeacherRoutes/TeacherProgramRoute');
+const AdminprogramRoute = require('../BackApp/Routes/AdminRoutes/AdminProgramRoute');
+const testRoute = require('../BackApp/Routes/TeacherRoutes/TestRoute');
+const vocabRoute = require('../BackApp/Routes/TeacherRoutes/VocabRoute');
+const categoryRoute = require('../BackApp/Routes/TeacherRoutes/CategorieRoute');
+const studentLessonRoutes = require('../BackApp/Routes/StudentRoutes/StudentLessonRoute');
+const studentVocabRoutes = require('../BackApp/Routes/StudentRoutes/StudentVocabRoute');
+const studentTestRoutes = require('../BackApp/Routes/StudentRoutes/StudentTestRoute');
+const studentQuizRoutes = require('../BackApp/Routes/StudentRoutes/StudentQuizRoute');
+const studentGameRoutes = require('../BackApp/Routes/StudentRoutes/StudentGameRoute');
+const notificationRoutes = require('../BackApp/Routes/NotifRoutes/NotifRoute');
+const parentProgressRoute = require('../BackApp/Routes/ParentRoutes/ParentProgressRoute');
+const messageRoutes = require('../BackApp/Routes/MessageRoutes/MessageRoutes');
+
 
 
 // Import model files to register schemas
-require('../Models/TeacherModels/Quiz');
-require('../Models/TeacherModels/Question');
-require('../Models/TeacherModels/Reponse');
-require('../Models/StudentModels/QuizSubmission');
+require('../BackApp/Models/TeacherModels/Quiz');
+require('./Models/TeacherModels/Question');
+require('./Models/TeacherModels/Reponse');
+require('./Models/StudentModels/QuizSubmission');
 
 dotenv.config();
 
